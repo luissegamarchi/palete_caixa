@@ -5,3 +5,4 @@
 *.pptx
 *.pdf
 *.env
+__pycache__
