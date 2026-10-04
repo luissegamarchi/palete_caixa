@@ -1,6 +1,7 @@
 import streamlit as st
 from paginas.login import pagina_login
 from paginas.listar_usuarios import pagina_listar
+from paginas.criar_usuario import pagina_criar
 
 st.set_page_config(page_title="Palete-Caixa",
                    page_icon= "📦",
@@ -25,7 +26,7 @@ else:
 
         st.divider()
         opcoes_menu = (
-            ["Modelo Palete-Caixa", "Listar Usuários", "Criar Usuários", "Alterar Status", "Alterar Senha", "Deletar Usuário"]
+            ["Modelo Palete-Caixa", "Listar Usuários", "Criar Usuário", "Alterar Status", "Alterar Senha", "Deletar Usuário"]
                        if is_admin else ["Modelo Palete-Caixa", "Alterar Senha"]
         )
 
@@ -38,3 +39,6 @@ else:
 
     if pagina == "Listar Usuários":
         pagina_listar()
+
+    elif pagina == "Criar Usuário":
+        pagina_criar()
