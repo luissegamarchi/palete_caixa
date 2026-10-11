@@ -6,3 +6,5 @@
 *.pdf
 *.env
 __pycache__
+*.json
+*.png
