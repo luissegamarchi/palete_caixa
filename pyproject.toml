@@ -6,11 +6,12 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "bcrypt>=5.0.0",
+    "boto3>=1.43.114",
     "ipykernel>=7.3.0",
     "matplotlib>=3.10.9",
     "numpy>=2.2.6",
     "pandas>=2.3.3",
-    "psycopg2>=2.9.13",
+    "psycopg2-binary>=2.9.13",
     "pulp>=3.3.2",
     "python-dotenv>=1.2.3",
     "sqlalchemy>=2.0.54",
